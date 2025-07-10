@@ -1,0 +1,280 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-app-bg {
+  min-height: 100vh;
+  background: #f4f7fa;
+  padding: 2rem 0;
+}
+
+.main-header {
+  background: #1976d2;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.main-header .subtitle {
+  font-size: 1.1rem;
+  color: #e3eaf7;
+  margin-top: 0.5rem;
+}
+
+.main-layout {
+  display: flex;
+  max-width: 1400px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.sidebar {
+  width: 280px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  padding: 2rem 1.5rem;
+}
+
+.template-thumbnails {
+  gap: 1.5rem;
+}
+
+.template-thumb {
+  width: 100%;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.template-thumb.selected {
+  border-color: #1976d2;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.12);
+  background: #e3eaf7;
+}
+
+.template-thumb span {
+  font-weight: 500;
+  margin-top: 0.8rem;
+  display: block;
+}
+
+.template1-thumb-placeholder {
+  background: #2a4d69;
+}
+
+.template2-thumb-placeholder {
+  background: #1976d2;
+}
+
+.template3-thumb-placeholder {
+  background: #34495e;
+}
+
+.template4-thumb-placeholder {
+  background: #e74c3c;
+}
+
+.template5-thumb-placeholder {
+  background: #27ae60;
+}
+
+.form-card, .preview-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+  padding: 2rem;
+  flex: 1;
+  min-width: 350px;
+}
+
+.form-card h2, .preview-card h2 {
+  color: #1976d2;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+.form-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: background 0.2s;
+}
+
+.form-section-header:hover {
+  background: #f7fafd;
+}
+
+.form-section-content {
+  margin-top: 1rem;
+}
+
+.form-block {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.exp-panel, .edu-panel, .proj-panel, .cert-panel, .ach-panel, .lang-panel {
+  margin-bottom: 1rem;
+}
+
+.exp-summary, .edu-summary, .proj-summary, .cert-summary, .ach-summary, .lang-summary {
+  background: #f7fafd;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.exp-summary:hover, .edu-summary:hover, .proj-summary:hover, .cert-summary:hover, .ach-summary:hover, .lang-summary:hover {
+  background: #e8f0fe;
+}
+
+.exp-fields, .edu-fields, .proj-fields, .cert-fields, .ach-fields, .lang-fields {
+  background: white;
+  padding: 1rem;
+  border-radius: 0 0 6px 6px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.remove-btn {
+  background: #d32f2f;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  background: #b71c1c;
+}
+
+.add-btn {
+  background: #4caf50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  margin-top: 1rem;
+}
+
+.add-btn:hover {
+  background: #388e3c;
+}
+
+.validate-btn {
+  background: #1976d2;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  margin-top: 1.5rem;
+  display: block;
+  width: 100%;
+}
+
+.validate-btn:hover {
+  background: #125ea2;
+}
+
+.preview-card > div {
+  overflow-y: auto;
+  max-height: 600px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.download-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 1000px) {
+  .main-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+  .form-card, .preview-card {
+    width: 100%;
+    order: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-section-header {
+    font-size: 0.95rem;
+  }
+  .form-block {
+    margin-bottom: 0.8rem;
+  }
+  .remove-btn, .add-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
